@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     img{
+        height: 400px;
+        width: 400px ;
+
+     }
+     .img{
+        height:400px;
+        width: 400px;
+        position: relative;
+        margin:50px  auto;
+        border: 1px solid black;
+     }
+     .img .imgcontent{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        /* left: 0; */
+        right: 0;
+        height: 100%;
+        width: 0%;
+        background-color: rgba(88, 84, 84,0.23);
+        color: aliceblue;
+        transition: 1s all ease;
+        text-align: center;
+        overflow: hidden;
+     }
+     .img:hover .imgcontent{
+       width: 100%;
+     }
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="img/photo-1509978778156-518eea30166b.jpg" alt="sun">
+        <div class="imgcontent">
+            <h1>black holl</h1>
+            <p>A black hole is a region of spacetime where gravity is so strong that nothing, including light or other electromagnetic waves, has enough energy to escape it.</p>
+        </div>
+    </div>
+</body>
+</html>

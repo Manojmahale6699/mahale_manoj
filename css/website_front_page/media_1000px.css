@@ -1,0 +1,16 @@
+@media (min-width:1000px){
+    .mainnav{
+        display:flex;
+    }
+    .navleft{
+        display: flex;
+        gap: 20px;
+        font-family:'inherit',sans-serif;
+        text-transform: capitalize;
+        font-size:12x;
+    }
+    .navright ul{
+        display:flex;
+        gap: 20px;
+    }
+}

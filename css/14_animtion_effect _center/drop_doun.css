@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.list{
+    background-color: brown;
+
+}
+ul{
+    display: flex;
+    gap: 25px ;
+}
+.list ul li{
+    padding: 10px ;
+    
+}
+.list ul li a{
+    color: white;
+}
+.list .dropmenu{
+    position: relative;
+}
+.list .dropmenu .showmenu{
+    display: none;
+    position: absolute;
+
+}
+.list .dropmemu:hover .showmenu{
+    display: block;
+}

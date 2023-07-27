@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:500px;
+            width: 500px;
+            border: 1px solid black;
+            position: relative;
+            margin:  50px  auto;
+            overflow: hidden;
+
+        }
+        img{
+            height: 500px;
+            width: 500px;
+            
+        }
+        .main .sub{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            height: 100%;
+            width:100%;
+            background-color:#04090c;
+            opacity: 0.5;
+            display: grid;
+            place-items: center;
+            transform: scale(0);
+            
+
+        }
+        .main:hover .sub {
+            transition:2s all cubic-bezier(0.075, 0.82, 0.165, 1) ;
+            transform: scale(1) rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="img/jpg.webp" alt="">
+        <div class="sub">
+            <div class="imageinffo">
+                <h1>The coolest pyramids of Egypt</h1>
+                <p>Built in the 24th century for the Egyptian pharaoh Unas, it is the oldest Old Kingdom pyramid. It was originally built at a height of 43 m, which is now in a dilapidated condition. It is a very significant pyramid as it represents the first of pyramids to have hymns carved on its wall. It was rediscovered in the 19th century, when a mummy was recovered from the ruins</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

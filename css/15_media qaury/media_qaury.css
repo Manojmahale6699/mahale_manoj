@@ -1,0 +1,188 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(163, 230, 230);
+.pd{
+    padding-bottom: 20px;
+
+}
+.margin{
+    margin-left: 100px ;
+    margin-right: 100px ;
+}
+.padding{
+    padding-top: 100px ;
+}
+.img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    display: flex;
+    gap: 40px;
+    flex: 1;
+}
+.imgiffo{
+    flex: 1;
+}
+.imgiffo h1 {
+     font-size:60px ;
+}
+.imgiffo p {
+    padding-top: 40px ;
+    font-size: 20px ;
+    padding-bottom: 90px;
+}
+.imgiffo button {
+    font-size:15px;
+    padding: 10px;
+    background-color: rgb(76, 122, 250);
+    /* opacity: 0.5; */
+    color: white;
+    border: transparent;
+    border-radius: 5%;
+}
+.buttan{
+    display: flex;
+    gap: 20px;
+    
+    
+}
+.buttan pre {
+    margin-top: 10px;
+
+}
+
+
+
+@media (max-width:576px) {
+
+        
+        .img{
+            display:flex;
+            flex-direction: column;
+            gap: 40px;
+}
+.imgiffo h1 {
+    font-size:20px ;
+}
+.buttan{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.margin{
+    margin-left: 40px ;
+    margin-right: 80px ;
+}
+.imgiffo button{
+    font-size:10px;
+}
+
+.imgiffo p {
+    padding-top: 40px ;
+    font-size: 20px ;
+    padding-bottom:40px;
+}
+.buttan pre {
+    margin-top: 08px;
+    font-size: 12px;
+
+}
+}
+
+/* media scren min 576px  */
+@media (min-width:576px) {
+
+        
+    .img{
+        display:flex;
+        flex-direction: column;
+        gap: 40px;
+}
+.imgiffo h1 {
+font-size:20px ;
+}
+.buttan{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.margin{
+margin-left: 40px ;
+margin-right: 80px ;
+}
+.imgiffo button{
+font-size:10px;
+}
+
+.imgiffo p {
+padding-top: 40px ;
+font-size: 20px ;
+padding-bottom:40px;
+}
+.buttan pre {
+margin-top: 08px;
+font-size: 12px;
+
+}
+}
+
+/* media scren mim 700 */
+@media (min-width:700px) {
+    .margin{
+        margin-left:100px;
+        margin-right: 80px;
+
+        }
+    
+}
+
+
+/* media scren min 1000px */
+
+@media (min-width:1000px) {
+        .img{
+            height: 270px;
+            width: 200px ;
+            display:flex;
+            flex-direction:row;
+            gap: 40px;
+}
+.imgiffo h1 {
+    font-size:20px ;
+    margin-bottom:0px;
+}
+.imgiffo p{
+    font-size:15px;
+    padding-bottom:20px;
+    }
+.buttan{
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+}
+.margin{
+    margin-left: 100px ;
+    margin-right: 100px ;
+}
+.imgiffo button{
+    font-size:10px;
+}
+
+.imgiffo p {
+    padding-top: 40px ;
+    font-size: 20px ;
+    padding-bottom:40px;
+}
+.buttan pre {
+    margin-top: 08px;
+    font-size: 12px;
+
+}
+}
+
+    

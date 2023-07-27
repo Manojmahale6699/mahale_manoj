@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'inherit',sans-serif;
+    letter-spacing: 1px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.mainnav{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:#0d369f;
+    color: white;   
+}
+ /*========= leftsite coddimg===========  */
+.navleft{
+    display: flex;
+    gap: 25px;
+    font-family:'inherit',sans-serif;
+    text-transform: capitalize;
+}
+.navleft3 a{
+    color: white;
+}
+.navright ul{
+    display:flex;
+    gap: 25px;
+}
+.navleft div{
+    transition: .5s all ease;
+    /* cursor: pointer; */
+}
+.navleft div:hover{
+    color: #ff6e65;
+    cursor: pointer;
+}
+.navright ul .hover{
+    transition: 0.5s all ease;
+
+}
+.navright ul .hover:hover{
+    color: #ff6e65;
+    cursor: pointer;
+}
+/* ========= menu bar (right site coding)============*/
+.menuleft .imglogo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.menuleft .imglogo p{
+ font-size: 30px;
+ color: #0d369f;
+}
+
+/* =======================menubar (left site codding )=============== */
+.menuright ul{
+    display: flex;
+    gap: 20px;
+}
+.moon{
+    margin-top: 7px;
+}
+/* ==============================main menu========================== */
+.mainmenu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 100px;
+    align-items: center;
+    font-size: 25px;
+    position:sticky;
+    z-index: 100;
+
+
+}
+.fg--search{
+    position: relative;
+}
+input{
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px 10px ;
+    border: none;
+    align-items: center;
+}
+.fg--search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    top:-5px;
+    right: 0;
+    bottom: 10px;
+    padding: 18px 20px;
+    z-index: 2;
+    color: #0d369f;
+    align-items: center;
+}
+li.home{
+    color: #ff6e65;
+}
+ul li{
+    transition: 0.5s all ease;
+    cursor: pointer;
+
+}
+ul li:hover{
+    color: #ff6e65;
+}
+/* ================================ main img =========================== */
+.homepage{
+    margin-top:15px ;
+    background-image: url("E:/css/website_front_page/img/banner2.jpg");
+    background-size: cover;
+    position: relative;
+    filter: brightness(80%);
+    
+}
+.homepage .imgiffo{
+   margin-left:300px;   
+   font-size: 60px;
+   padding-top : 200px;
+   padding-bottom: 200px;
+    width: 30%;
+    color: white;
+    text-transform: capitalize;
+}
+.homepage .imgiffo button{
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    text-transform: capitalize;
+    border:transparent;
+    border-radius: 5px;
+
+}
+.homepage .imgiffo button:hover{
+    background-color: #ff6e65;
+    font-size:15px;
+    color: white;
+
+
+}
+/* ==================================== website containt =======================*/
+.websitecontaint{
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    position: relative;
+    width:100%;
+}
+.websitecontaint .containtiffo{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 70%;
+    gap:10px;
+    position: absolute;
+    top:-55px ;
+    left: 300px;
+    /* right: 200px; */
+    z-index: 1;
+}
+.websitecontaint .containtiffo .gridbox{
+    border: 1px solid black;
+    border: transparent;
+    /* padding: 40px; */
+    text-align: center;
+    border-radius:10px;
+    width: 80%;
+    height: 200px;
+    text-transform: capitalize;
+    
+}
+.websitecontaint .containtiffo .gridbox span{
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+    text-transform: capitalize;
+}
+.websitecontaint .containtiffo .gridbox p{
+    font-size: 20px;
+    color: white;
+    transition: 0.3s all ease;
+}
+.websitecontaint .containtiffo .gridbox p:hover{
+    color: black;
+}
+.websitecontaint .containtiffo .gridbox .box1{
+    height: 200px;
+    padding: 40px;
+    background-color: #007bff;
+}
+.websitecontaint .containtiffo .gridbox .box2{
+    height: 200px;
+    padding: 40px;
+    background-color: #ffc945;
+}
+.websitecontaint .containtiffo .gridbox .box3{
+    height: 200px;
+    padding: 40px;
+    background-color: #ff4f81;
+}
+.websitecontaint .containtiffo .gridbox .box4{
+    height: 200px;
+    padding: 40px;
+    background-color: #1ee697;
+}
+/* =======================  studious iffo section ========= -->*/
+.studioustitel{
+    margin-top: 250px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.studioustitel .studiousinffo{
+    margin-bottom: 5px;
+}
+.studioustitel .studiousinffo .Studious{
+    color: #ff6e65;
+}
+ .studioustitel .underline .underline1{
+    height: 1px;
+    width: 80px;
+    border: 1px solid black;
+
+}
+ .studioustitel .underline{
+    height: 20px;
+    width: 150px;
+    /* background-color: aqua; */
+    margin:auto;
+}
+ .studioustitel .underline .underline2{
+    margin-top: 5px;
+    margin-left: 40px;
+    height: 1px;
+    width: 80px;
+    border: 1px solid black;
+}
+/*=========================== Welcome_to_Studious  =============== */
+.Studiouskind{
+    display:flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.Studiouskind1{
+    margin-top : 100px;
+    padding-top: 20px;
+    height: 200px;
+    width: 350px;
+    /* border: 1px solid black; */
+    text-align: center;
+    text-transform: capitalize;
+}
+.Studiouskind1 .icone{
+    font-size:30px;
+    color: #0d369f;
+}
+.Studiouskind1 .iconeinffo{
+    padding-top: 50px;
+    padding-bottom: 22px;
+    font-size: 30px;
+    color: #060606;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.Studiouskind1 .iconeinffo:hover{
+    color: #ff6e65;
+}
+.Studiouskind1 .iconeinffo1{
+    font-size: medium;
+    color: #707070;
+    line-height: 35px;
+}
+/* =================  Pick a Course to Get Started  =============== */
+
+.PickaCourse_img{
+    height:auto;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+
+}
+.content1{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.PickaCourse_img .PickaCourse_imginffo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.PickaCourse_img .PickaCourse_imginffo .Intermediate{
+    display: flex;
+    gap: 10px;
+}
+.PickaCourse_img .PickaCourse_imginffo .Intermediate .fa-signal{
+    color: #ff6e65;
+}
+.PickaCourse_img .PickaCourse_imginffo .week{
+    display: flex;
+    gap: 10px;
+}
+.PickaCourse_img .PickaCourse_imginffo .week .fa-clock{
+    color: #ff6e65;
+}
+ h3{
+     padding-bottom: 15px;
+}
+.PickaCourse_img .content1 .PickaCourse_imginffo_1 .PickaCourse_imginffo_2{
+    line-height: 25px;
+}
+.PickaCourse_img .content1 .star-5{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.PickaCourse_img .content1 .star-5 .fa-star{
+    font-size: 15px;
+    color: #ffc945;
+}
+.PickaCourse_img .content1 .star-5 .fa-arrow-right{
+    margin-left: 10px;
+}
+.PickaCourse_img .content1 .star-5 .know_details{
+    font-size: medium;
+    transition: .3s all ease;
+    color: #ff6e65;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+.PickaCourse_img .content1 .star-5 .know_details:hover{
+    color: #0d369f;
+}
+/* ===================  Pick a Course to Get Started ( dispaly-grid)======== */
+ .main{
+    display: grid;
+    grid-template-columns:repeat(3,2fr);
+    place-content:center;
+    margin-left: 10px;
+    height:auto;
+    width: 60%;
+    row-gap: 100px;
+    align-items: center;
+    margin: 50px 20%;
+}
+/* ================= button============== */
+.browse-more-courses{
+    margin: 100px auto;
+    height: 50px;
+    width: 250px;
+}
+.browse-more-courses .bt1{
+    height: 50px;
+    width: 250px;
+    background-color: #ff6e65;
+    border-radius: 5px;
+    border: transparent;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bolder;
+    transition: 0.3s all ease;
+    cursor: pointer;
+
+}
+.browse-more-courses .bt1:hover{
+    background-color: #0d369f;
+}
+/* ========================== */
+
+
+.offline{
+    background-image: url(img/bg3.jpg);
+    background-size: cover;
+}
+.offline .main1{
+    display: grid;
+    grid-template-columns:repeat(2,2fr);
+    height: auto;
+    width: 33.333%;
+    gap: 20px;
+    margin-left: 50%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+
+  
+}
+ .offline .main1 .margin{
+    background-color: white;
+    border-radius: 5px;
+    /* padding:15px 0px; */
+}
+.Flexible_Classes{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+.Flexible_Classes .fa-hands-asl-interpreting{
+    font-size: 40px;
+    color:#0d369f;
+    padding-left: 10px;
+}
+.Flexible_Classes .Flexible_Classes1{
+    line-height: 35px;
+    letter-spacing: 1px;
+    padding-right: 10px;
+}
+/* ==========================  Strength_in_Numbers section  */
+.Strengthinffo{
+    margin-top: 10px;
+    text-align: center;
+    color: dimgrey;
+    margin-bottom: 100px;
+    
+}
+.numberinffo{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.number_inff {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.number_inffo h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom:20px;
+}
+/* ================  feedback     ================*/
+.feedback_main{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    letter-spacing: 1px;
+
+}
+.feedback{
+    height:auto;
+    width: 300px;
+}
+.feedback .contect1{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.feedback .contect1 .imgboeder .imgboeder2{
+    border-radius: 50%;
+}
+.feedback2::before{
+    font-size: 80px;
+    color: #ff6e65;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+/*  ===================== World Class Instructors   ========   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
