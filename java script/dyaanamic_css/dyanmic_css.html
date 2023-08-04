@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .chengecss.div1{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            color: aliceblue;
+            overflow: hidden;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="return chengecss()">Add css</button>
+    <button onclick="return removecss()"> Remove css</button>
+
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt beatae illo perferendis quisquam mollitia consequuntur ab! Fugiat at quo quam harum! Tempore praesentium voluptate, vel inventore fuga placeat quam! Nemo dolores dicta, obcaecati velit hic ipsam et autem ipsum quisquam magni aperiam reiciendis ratione quaerat repudiandae quibusdam aspernatur debitis tenetur accusamus, animi cumque explicabo! Ut voluptates velit possimus, ducimus eius suscipit iste quam aliquam nulla adipisci! Veniam magnam alias totam debitis quis, sit quos sequi impedit beatae molestiae? Eius, libero eos quo nihil maxime exercitationem pariatur, amet voluptatem illum neque mollitia repudiandae officiis velit culpa explicabo corrupti iure? Ipsam ipsa doloribus consequuntur? Est odio quia explicabo ipsam, voluptas harum asperiores ab. In sed non temporibus similique id. Laboriosam, voluptates, itaque quis doloribus dolores commodi dolorum, dicta ipsum pariatur aut voluptas tenetur. Expedita officia perspiciatis amet sint tempora dicta quam, alias modi totam enim dolorem dolores. Recusandae obcaecati inventore voluptatibus facilis, error illo quibusdam nisi nostrum. Debitis quaerat eligendi et suscipit exercitationem dolores ratione excepturi perspiciatis inventore ipsum dicta possimus nisi ab voluptatum eius, vero velit architecto qui sit magni similique nostrum perferendis dolorem molestiae. Id debitis, dolores numquam dicta, consectetur distinctio, consequatur aut voluptatum culpa quas blanditiis aliquam quis quibusdam?
+    </div>
+
+
+    <script>
+        function chengecss() {
+            let div = document.querySelector(".div1") 
+            div.classList.add ("chengecss");
+            // div. classList.toggle("chengecss");
+        }
+        function removecss() {
+            let div = document.querySelector(".div1") 
+            div.classList.remove("chengecss");
+        }
+    </script>
+</body>
+</html>
