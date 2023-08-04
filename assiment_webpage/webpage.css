@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+/*  ==============   header =================== */
+.header{
+    height:45px;
+    width: 100%;
+    background-color:#333;
+    color: rgba(255, 255, 255, 0.562);
+    /* font-size: 30px; */
+    /* position: fixed; */
+}
+.margin_left_right{
+    margin: 0px 30px ;
+}
+.header .topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.header .topheader .colorlib{
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    
+}  
+
+.header .topheader .section1{
+    height: 45px;
+    width: 130px;
+    border-left: 1px solid rgba(255, 255, 255, 0.822);
+    /* background-color: #000; */
+    display: grid;
+    place-content: center;
+
+}
+.header .topheader .rooftop{
+    height: 45px;
+    width: 130px;
+    border-left: 1px solid rgba(255, 255, 255, 0.308);
+    background-color: #000;
+    display: grid;
+    place-content: center;
+    font-size: medium;
+    text-transform: uppercase;
+
+}
+.header .topheader .displayicone{
+    display: flex; 
+    gap: px;
+    
+}
+.header .topheader .displayicone .section{
+    height: 45px;
+    width: 50px;
+    border-left: 1px solid rgba(255, 255, 255, 0.247);
+    display: grid;
+    place-content: center;
+    color:rgba(255, 255, 255, 0.568) ;
+}
+.header .topheader .displayicone .section2{
+    height: 45px;
+    width: 50px;
+    border-left: 1px solid rgba(255, 255, 255, 0.247);
+    display: grid;
+    place-content: center;
+    background-color: #7ac64d;
+}
+
+/* <!-- ====================      header 2 ===================== --> */
+.menu01{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 200px;
+    height: 100px;
+
+}
+.navlist-left{
+    display: flex;
+    gap: 50px;
+
+}
+.navlist-right1{
+    display: flex;
+    gap: 50px;
+    text-transform: uppercase;
+
+}
+.navlist-right1 .fa-solid{
+    font-size: smaller;
+    color: #333333bb;
+}
+.imglogorooftop1{
+    height: 75px;
+}
+/* <!--  ==============  backgraun img =================== --> */
+.backgraund-img .imgmain{
+    
+    background-image: url(img/header-bg.png.webp);
+}
