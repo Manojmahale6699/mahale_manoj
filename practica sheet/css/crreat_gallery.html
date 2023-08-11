@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin :0rem; 
+            padding: 0rem;
+        }
+        img{
+            height: 20rem;
+            width: 20rem;
+            border: 8px solid green;
+            border-radius: 1rem;
+        }
+        .chengecss.mainimg{
+            height: auto;
+            /* width: 90rem; */
+            display:grid;
+             grid-template-columns:repeat(4,2fr) ;
+             background-color: rgba(0, 255, 255, 0.192);
+        }
+        .div5{
+            transform: rotate(20deg);
+        }
+        .div1{
+            transform: rotate(45deg);
+        }
+        .div7{
+            transform: rotate(12deg);
+        }
+        button{
+            margin: auto;
+            height: 2rem;
+            width: 6rem;
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="mainimg">
+
+    <div class="div1">
+        
+        <img src="img/download 1.jpg" alt="">
+    </div>
+    <div class="div2">
+        <img src="img/download 2.jpg" alt="">
+        
+    </div>
+    <div class="div3">
+        <img src="img/download 3.jpg" alt="">
+        
+    </div>
+    <div class="div4">
+        <img src="img/download 4.jpg" alt="">
+        
+    </div>
+    <div class="div5">
+        <img src="img/download 5.jpg" alt="">
+
+    </div>
+    <div class="div6">
+        <img src="img/download 6.jpg" alt="">
+        
+    </div>
+    <div class="div7">
+        <img src="img/download 7.jpg" alt="">
+        
+    </div>
+    
+    <div class="div8">
+        <img src="img/download 8.jpg" alt="" >
+    </div>
+</div>
+<button onclick="return chengecss()">chengecss</button>
+
+<script>
+function chengecss(){
+    let js=document.querySelector(".mainimg")
+    js.classList.toggle("chengecss")
+}
+</script>
+</body>
+</html>

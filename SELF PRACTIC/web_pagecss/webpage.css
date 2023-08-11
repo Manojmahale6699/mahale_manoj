@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.menu{
+    display:flex;
+    padding-top: 10px;
+    gap: 20px ;
+    justify-content: space-between;
+    padding-bottom: 200px;
+    background-color: rgb(7, 53, 83);
+    color: white
+}
+div{
+    padding-left:80px;
+    padding-right: 80px;
+    text-transform:capitalize;
+}
+.list ul{
+    list-style: none outside none;
+    display: flex;
+    gap: 50px;
+}
+.button{
+      border-radius:10%/50%;
+      padding-left: 5px;
+      padding-right: 5px;
+      height:20px;
+      width: 100px;
+      background-color: transparent;
+      border: 1px solid gray;
+      color: white;
+}
+.list ul li.home{
+    color:aqua;
+}
+/* ================== section ==================== */
+.main{
+    background-color: rgb(7, 53, 83);
+    display: flex;
+    /* justify-content: center; */
+    gap: 200px;
+    padding-bottom: 150px;
+    color: white;
+}
+img{
+height: 350px ;
+width: 500px;
+background-color: transparent;
+border-radius: 40%
+}
+.imgiffo h1{
+    font-size: 70px;
+    padding-bottom: 40px;
+}
+.imgiffo p{
+    font-size: larger
+}
+.imgiffo .start{
+    background-color: aqua;
+    margin-top: 60px;
+    height: 40px;
+    width: 150px;
+    margin-right: 20px;
+    border-radius:10%/50%;
+    color: white;
+}
+.fa-play{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+/* ================================================================= */
+.font ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    background-color: rgb(244, 215, 250);
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.myob{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.belimo{
+    text-transform: uppercase;
+}
+.lilly{
+    font:italic;
+}
+footer{
+    text-align: center;
+    padding-top: 30px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:100px;
+            width: 100px;
+            border: 1px solid black;
+
+        }
+    .backgraundcolorRed.main{
+            height: 1000px;
+            width: 100%;
+            background-color: red;
+        }
+
+        .backgraundcolorGreen.main{
+            height: 1000px;
+            width: 100%;
+            background-color: green;
+        }
+
+
+        .backgraundcolorBlue.main{
+            height: 1000px;
+            width: 100%;
+            background-color: blue;
+        }
+
+
+        .backgraundcolorYellow.main{
+            height: 1000px;
+            width: 100%;
+            background-color:yellow;
+        }
+
+
+        
+        .div1{
+            background-color: red;
+        }
+           .div2{ background-color: green;
+           }
+           .div3{
+            background-color: blue;
+           }
+           .div4{
+            background-color: yellow;
+           }
+           button{
+            background-color: transparent;
+           }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="div1">
+            <button class="btn1" onclick="return backgraundcolorRed()">click</button>
+        </div>
+        <div class="div2">
+            <button class="btn2" onclick="return backgraundcolorGreen()">click</button>
+        </div>
+        <div class="div3">
+            
+            <button class="btn3" onclick="return backgraundcolorBlue()">click</button>
+        </div>
+        <div class="div4">
+            <button class="btn4" onclick="return backgraundcolorYellow()">click</button>
+        </div>
+    </div>
+<script>
+     function backgraundcolorRed(){
+        let color = document.querySelector(".main")
+        color.classList.toggle("backgraundcolorRed")
+        
+     }
+
+     function backgraundcolorGreen(){
+        let color = document.querySelector(".main")
+        color.classList.toggle("backgraundcolorGreen")
+        
+     }
+
+     function backgraundcolorBlue(){
+        let color = document.querySelector(".main")
+        color.classList.toggle("backgraundcolorBlue")
+        
+     }
+
+     function backgraundcolorYellow(){
+        let color = document.querySelector(".main")
+        color.classList.toggle("backgraundcolorYellow")
+        
+     }
+</script>
+</body>
+</html>

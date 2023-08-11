@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Enter value in user input
+        <input type="text" name="" id="name">
+        <button onclick="return namefun()"> clike</button>
+        <h3>Enter value = <span id="entervalue" ></span></h3>
+    </form>
+    <script>
+        function namefun(){
+            let from = document.getElementById("name").value;
+
+            document.getElementById("entervalue").innerText=from;
+            return false;
+        }
+    </script>
+</body>
+</html>

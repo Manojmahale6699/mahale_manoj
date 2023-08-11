@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <button onclick="return chengecolor()">circal</button>
+    <button onclick="return rect()">rect</button>
+    <hr color="violet">
+    <div class="div1" id="div1"></div>
+
+    <script>
+        function chengecolor(){
+           let box = document.getElementById("div1");
+           box.style.backgroundColor="pink"
+           box.style.transition="0.3s all ease"
+           box.style.border="1px solid pink"
+           box.style.borderRadius="50%"
+           return false;
+
+         }
+
+         function rect(){
+            let box2 = document.getElementById("div1");
+            box2.style.borderRadius="0%";
+            box2.style.transition="0.3s all ease"
+         }
+         
+    </script>
+</body>
+</html>
