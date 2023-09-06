@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+    .main{
+        height: 120px;
+        width: 120px;
+        background-color: red;
+        display: grid;
+        place-content: center;
+        color: white;
+
+    }
+</style>
+<body>
+    <div class="main">
+        <div id="count"></div>
+    </div>
+    
+    <script>
+        let number1 = setInterval(move_number,20)
+        let strat = 0 ;
+        function move_number(){
+            let div = document.getElementById("count");
+            div.innerHTML= ++strat;
+            if(strat == 300){
+                clearInterval(number1);
+            }
+        }
+
+    </script>
+</body> 
+</html>

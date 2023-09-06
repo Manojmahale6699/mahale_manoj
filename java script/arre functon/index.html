@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn1" >click hrer </button>
+    <button id="button"> clickhere</button>
+    <p id="id1"></p>
+</body>
+<script>
+  let btn = document.querySelector(".btn1");
+  btn.addEventListener("click" , ()=> {
+    alert ("hello word")
+  })
+</script>
+<script>
+    let btn2 = document.getElementById("button")
+    btn2.addEventListener("mouseover",() => {
+        alert( "good morning")
+    })
+
+    let btn3 = document.getElementById("button")
+    btn3.addEventListener("mouseout" , ()=> {
+        alert ( 'good night')
+    })
+
+    let a = new Date();
+     document.getElementById("id1").innerHTML=a;
+
+     document.getElementById("id1").innerText=a
+        .getDate()+ "-" + a.getMonth() + "-" + a.getFullYear();
+
+        document.getElementById("id1").innerText=a
+        .getHours() + ":" + a.getMinutes() + ":" + a.getSeconds() + " : "  + a.getMilliseconds()
+        
+      
+</script>
+
+
+</html>

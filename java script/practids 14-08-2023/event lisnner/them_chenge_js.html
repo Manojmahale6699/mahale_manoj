@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+      .darktheem{
+        background-color: black;
+        color: white;
+      }
+         a {
+        text-decoration:none;
+        color: white;
+      }
+</style>
+<body>
+    <div class="icone">
+        <span class="fa-solid fa-moon"></span>
+        <!-- <span class="fa-regular fa-sun"></span> -->
+
+        <h1>hello world <a href="">good mornig </a></h1>
+    </div>
+    <script>
+        let icone = document.querySelector(".fa-moon");
+        icone.addEventListener("click" , function () {
+            document.body.classList.toggle("darktheem")
+
+            if (document.body.classList.contains("darktheem")==true){
+                icone.classList.remove("fa-moon")
+                icone.classList.add("fa-sun")
+            }
+            else{
+                icone.classList.remove("fa-sun")
+                icone.classList.add("fa-moon")
+            }
+        })
+    </script>
+</body>
+</html>

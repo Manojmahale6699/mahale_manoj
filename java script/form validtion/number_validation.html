@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <tr>
+            <td>Ener a mobie no
+                <input type="text" name="" id="num1" placeholder="Mobile No." maxlength="10" 
+                onblur="return chack_number()" onkeyup="return varifa_number()"> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span id="mobiLe"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="sub" value="submit" onclick="return chack_number()">submit</button>
+            </td>
+        </tr>
+    </form>
+    <script>
+        function chack_number() {
+
+            let varifa = document.getElementById("num1").value;
+            if(varif =="" || varifa == null){
+                document.getElementById("mobiLe").innerText= " enter a number"
+                return false ;
+            }
+        }
+
+        function varifa_number() {
+            let no = document.getElementById("num1").value;
+            let regEx = /^[0-9]+$/;
+            let start = /^[6-9]/
+            if (!(regEx.test(no)) || no.length < 10 || !(start.test(no))) {
+                document.getElementById("mobiLe").innerText = "Enter proper number"
+                return false;
+            } else {
+                document.getElementById("mobiLe").innerText = ""
+                return false
+            }   
+        }
+
+        // function  varifa_number() {
+        //     let no = document.getElementById("num1").value;
+        //     let regEx = /^[0-9]+$/;
+        //     let start = /^[6-9]/
+        //     if (!(regEx.test(no)) || no.length < 10 || !(start.test(no))) {
+        //         document.getElementById("mobile").innerText = "Enter Proper number"
+        //         return false;
+        //     } else {
+        //         document.getElementById("mobile").innerText = " "
+        //         return false;
+        //     }
+        // }
+
+       
+        
+    </script>
+</body>
+</html>
