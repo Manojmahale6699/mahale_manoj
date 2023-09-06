@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+
+        }
+        header{
+            text-transform: capitalize;
+        }
+        a{
+            background-color: teal;
+            color: white;
+            padding: 10px;
+            display: block;
+            transition: .5s all ease;
+            font-size: 25px;
+
+        }
+        a:hover{
+            background-color: rgba(0, 128, 128, 0.89);
+            transform: scale(1.2);
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            background-color: teal;
+            color: white;
+            position: relative;
+        }
+        .nav{
+            color: rgba(255, 255, 255, 0.432);
+            position: absolute;
+            right: -200px;
+            bottom:-95px;
+            height:10vh;
+            width: 200px;
+            transition: 0.2s all linear;
+            /* display: none; */
+
+        }
+        .showmenu{
+            /* display: block; */
+            right: 0px;
+        }
+        .submenu a{
+            background-color: rgb(165, 157, 42);
+        }
+        .submenu{
+            position: absolute;
+            top:170px;
+            right: 200px;
+            display:none;
+        }
+        .submenu2{
+            display: block;
+        }
+/*========= */
+        .opner1 a{
+            background-color: rgb(233, 166, 166);
+        }
+
+        .opner1{
+            position: absolute;
+            top:50px;
+            right: 200px;
+            display:none;
+        }
+        .opner3{
+            display: block;
+        }
+
+        /* ====== */
+        .one1 a{
+            background-color: rgba(0, 0, 0, 0.514);
+        }
+
+        .one1{
+            position: absolute;
+            top:80px;
+            right: 200px;
+            display:none;
+        }
+        .one3{
+            display: block;
+        }
+/* ========== */
+        .second1 a{
+            background-color: aqua;
+    
+         }
+        .second1{
+            position: absolute;
+            top:120px;
+            right: 200px;
+            display:none;
+        }
+        .second3{
+            display: block;
+        }
+/* =========== */
+        .rounder1{
+            position: absolute;
+            top:200px;
+            right: 200px;
+            display:none;
+        }
+        .rounder1 a{
+            background-color: rgba(0, 0, 255, 0.349);
+        }
+        .rounder3{
+            display: block;
+        }
+/* =========== */
+        .bwoler1{
+            position: absolute;
+            top:240px;
+            right: 200px;
+            display:none; 
+        }
+        .bwoler1 a{
+            background-color: rgba(165, 42, 42, 0.74);
+        }
+        .bwoler3{
+            display: block;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h2>crickt team asia cup 2023</h2>
+            <div class="nav" id="navmenu">
+                <ul id='navbar'>
+                    <li onclick="return opner()"><a href="#">opner </a></li>
+                    <li onclick="return one()"><a href="#">one-doune </a></li>
+                    <li onclick="return second()"><a href="#">second-doune </a></li>
+                    <li onclick="return myfun()" ><a href="#">miedale-oder </a></li>  
+                    <li onclick="return rounder()" ><a href="">all rounder</a></li>                 
+                    <li onclick="return bwoler()"><a href="">bwoler</a></li>
+                </ul>
+            </div>
+            <div class="submenu" id="submenu1">
+                <ul>
+                    <li><a href="">kl rahul w/c</a></li>
+                </ul>
+            </div>
+
+            <div class="opner1" id="opner2">
+                <ul>
+                    <li><a href="">rohit sharma (C)</a></li>
+                    <li><a href="">shuman  gill</a></li>
+                </ul>
+            </div>
+
+            <div class="one1" id="one2">
+                <ul>
+                    <li><a href="">virt kohli</a></li>
+                   
+                </ul>
+            </div>
+
+            <div class="second1" id="second2">
+                <ul>
+                    <li><a href="">sreys aiyar</a></li>
+                   
+                </ul>
+            </div>
+
+            <div class="rounder1" id="rounder2">
+                <ul>
+                    <li><a href="">hardik pandya </a></li>
+                    <li><a href="">raavindra jadeja</a></li>
+                    <li><a href="">shardul thakur </a></li>
+
+                </ul>
+            </div>
+
+            <div class="bwoler1" id="bwoler2">
+                <ul>
+                    <li><a href="">kuldip yadav</a></li>
+                    <li><a href="">mohhamad shami</a></li>
+                    <li><a href="">jusprit bhummra</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <a href=""><span class="fa-solid fa-bars" onclick="return showmenu()" id="btn1"></span></a>
+            </div>
+        </div>
+    </header>
+    <script>
+
+        function showmenu(){
+            let a = document.getElementById("navmenu")
+                a.classList.toggle("showmenu")
+                return false;
+        }
+
+        function myfun(){
+            let shwo = document.getElementById("submenu1")
+            shwo.classList.toggle("submenu2")
+            return false ;
+        }
+
+        function opner(){
+            let shwo = document.getElementById("opner2")
+            shwo.classList.toggle("opner3")
+            return false ;
+        }
+
+        function one(){
+            let shwo = document.getElementById("one2")
+            shwo.classList.toggle("one3")
+            return false ;
+        }
+
+        function second(){
+            let shwo = document.getElementById("second2")
+            shwo.classList.toggle("second3")
+            return false ;
+        }
+
+        function rounder(){
+            let shwo = document.getElementById("rounder2")
+            shwo.classList.toggle("rounder3")
+            return false ;
+        }
+
+        function bwoler(){
+            let shwo = document.getElementById("bwoler2")
+            shwo.classList.toggle("bwoler3")
+            return false ;
+        }
+
+        
+    </script>
+</body>
+</html>

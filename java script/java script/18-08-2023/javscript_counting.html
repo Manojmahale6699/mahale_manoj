@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            background-color: teal;
+            color: white;
+            display: grid;
+            place-content:center;
+            font-size:50px;
+            margin:100px auto;
+            transition: .1s all ease;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="counting">
+            <!-- <h2>0</h2> -->
+        </div>
+    </div>
+    <script>
+        let count = setInterval(updatecounting,100)
+        let start = 0 ;
+        function updatecounting(){
+            let div = document.getElementById("counting");
+            div.innerHTML= ++start ;
+            if  (start==300)
+            {
+                clearInterval(count);
+            }
+        }
+    </script>
+
+<!-- <script> -->
+    <!-- let count1 = setInterval(updatecount, 240)
+    let start1 = 100;
+    function updatecount() {
+        let div = document.getElementById("counting");
+        div.innerHTML = ++start1;
+        if (start1 == 300) {
+            clearInterval(count)
+        }
+    } -->
+<!-- </script> -->
+</body>
+</html>

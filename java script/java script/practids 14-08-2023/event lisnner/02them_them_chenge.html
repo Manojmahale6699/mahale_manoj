@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .theem1{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <div class="mydiv">
+       <div class="moon"><span class="fa-regular fa-moon"></span></div>
+       <!-- <div class="sun"><span class="fa-regular fa-sun"></span></div> -->
+
+       <h1>good mornig </h1>
+
+    </div>
+    <script>
+        let theem = document.querySelector(".fa-moon")
+        theem.addEventListener("click", function(){
+            document.body.classList.toggle("theem1")
+            if ( document.body.classList.contains("theem1") == true) {
+                theem.classList.remove("fa-moon")
+                theem.classList.add("fa-sun")
+            }
+            else{
+                theem.classList.remove("fa-ssun")
+                theem.classList.add( "fa-moon" )
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        Enter in value table <input type="text" name="" id="tablevalue">
+
+        <button onclick=" return tablecalculation()">click</button>
+        <br><br>
+
+        <div id="DisplayTable"></div>
+
+        <script>
+            function tablecalculation(){
+                // debugger
+                let table = document.getElementById("tablevalue").value ;
+                let TAABLE =Number(table)
+
+                let div = document.getElementById("DisplayTable")
+
+                if(TAABLE == ""){
+                    alert("enter the value")
+                }
+                 else {
+                    var res = "", i = 1 ;
+                    for(i=1 ; i<=10 ; i++) {
+                        res = res + "<p>" + table+ "&Cross;" + i + "=" + table*i + "<p>";
+                    }
+                    div.innerHTML= res ;
+                    return false ;
+                 }
+            }
+        </script>
+    </form>
+</body>
+</html>
