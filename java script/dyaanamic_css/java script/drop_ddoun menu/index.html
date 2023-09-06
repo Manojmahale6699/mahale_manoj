@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+        menu{
+    position: relative;
+}
+        .classmenu{
+    position: absolute;
+    bottom: -140px;
+    height: auto;
+    width: 150px;
+    display: none;
+}
+    .classmenu a{
+   padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    display:block;
+}
+.show{
+    display:block;
+}
+    </style> -->
+</head>
+<script src="script.js"></script>
+<!-- <script >
+    function showme(){
+        let a= document.getElementById("menu")
+        a.classList.toggle("show")
+    }
+    
+</script> -->
+<body>
+    <header>
+        <menu>
+            <h1>news papper</h1>
+            <div id="menu"  class="classmenu">
+                <a id="id1" href="home">home</a>
+                <a id="id1"  href="menu">menu</a>
+                <a id="id1"  href="login">login</a>
+                <a id="id1"  href="contact us">contact us</a></div>
+        </menu>
+        <div>
+           <input type="button" id="bynsubmit" onclick="showme()" value="Submit">
+        </div>
+    </header>
+</body>
+</html>

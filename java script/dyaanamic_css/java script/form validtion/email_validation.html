@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #infformatin{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    enter your email id 
+                </td>
+                <td>
+                    <input type="text" id="email" placeholder="email.id" maxlength="25"
+                    onblur="return chackmail()"
+                    onkeyup= " return varifa_mail()">
+                    <span  id="infformatin"></span>
+
+                </td>
+            </tr>
+        </table>
+
+        <tr>
+            <td>
+                <button onclick=" return chackmail()">click here</button>
+            </td>
+        </tr>
+    </form>
+
+    <script>
+        function chackmail() {
+            let mail = document.getElementById("email").value;
+            if(mail == "" || mail == null){
+                document.getElementById("infformatin").innerText = "Enetr email"
+                return false ;
+            }else{
+                document.getElementById("infformatin").innerText = ""
+            }
+        }
+
+        function varifa_mail(){
+            let mail = document.getElementById("email").value ;
+            let regx = /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/ ;
+            if (regx.test(mail)){
+                document.getElementById("infformatin").innerText=""
+                return true ;
+            }
+            else{
+                document.getElementById("infformatin").innerText = "Enrter the valid email"
+            }
+
+        }
+
+    </script>
+</body>
+</html>

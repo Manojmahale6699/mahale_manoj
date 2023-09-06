@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #msg{
+    color: red;
+    text-transform: capitalize;
+    }
+</style>
+<body>
+    <form action="">
+
+        <table>
+            <tr>
+                <td>enter name </td>
+                <td>
+                    <input type="text" placeholder="enter name " id="usrename" maxlength="25"
+                    onblur="return cheakname()" onclick="return validname()">
+                </td>
+                <td>
+                    <span id="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button onclick="return cheakname()" value="submit">submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+          function cheakname(){
+            let check = document.getElementById("usrename").value;
+            if(check=="" || check==null){
+                document.getElementById('msg').innerHTML ="please enter your name";
+                alert("enter your name ")
+                return false;
+            }
+          }
+          function validname() {
+          let cheak = document.getElementById("usrename").value;
+          let regexp = /^[a-zA-Z]*$/;
+          if(!(regexp.test(cheak))|| cheak.length < 2){
+            document.getElementById("msg").innerText
+            = "enter your peoper name "
+            return false;
+          }
+            else{
+                document.getElementById("msg").innerText3=""
+                return false ;
+          }
+        }
+
+          
+        
+        // function nameValid() {
+        //     let uname = document.getElementById("username").value;
+        //     let regEx = /^[a-zA-Z]*$/;
+        //     if (!(regEx.test(uname)) || uname.length < 2) {
+        //         document.getElementById("msg").innerText = "Enter proper name"
+        //         return false;
+        //     } else {
+        //         document.getElementById("msg").innerText = ""
+        //         return false;
+        //     }
+        // }
+    </script>
+</body>
+</html>

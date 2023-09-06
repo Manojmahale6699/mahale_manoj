@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    text-decoration: none;
+}
+.img{
+    height:900px;
+    width: 100%;
+    background-image:url(img/istockphoto-1402430797-612x612.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imginffo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+.menu_bar{
+    display: flex;
+    gap: 20px;
+    display: none;
+    color: white;
+}
+.menu_bar1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
