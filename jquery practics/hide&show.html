@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kablammo&family=Open+Sans:ital,wght@1,600&family=Roboto+Slab:wght@300&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            color: white;
+            text-shadow: 2px 2px  blue;
+            font-family: Roboto Slab, serif;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">toggle</button>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque adipisci expedita facilis repellendus enim eos cupiditate voluptatem nisi perferendis.</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("h1").hide(1000)
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("h1").show(1000)
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("h1").toggle(1000)
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .main{
+            background-color: aqua;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px;
+            
+        }
+        .menubar{
+            display: none;
+            height: 200px;
+            width: 200px;
+            position: fixed;
+            right:5vh;
+            top:1vh;
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+          
+
+        }
+        .menubar1{
+            display: grid;
+            place-content: center;
+        }
+     
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="menu">
+                <div>
+                <h1>text tile </h1>
+                </div>
+                <div class="btn1">
+                    <span class="fa-solid fa-bars"></span>
+                    <!-- <i class="fa-solid fa-xmark"></i> -->
+                </div>
+                <div class="menubar" id="show">
+                    <ul>
+                        <li><a href="#"></a>home</li>
+                        <li><a href="#"></a>home</li>
+                        <li><a href="#"></a>home</li>
+                        <li><a href="#"></a>home</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function(){
+            $icone = $(".fa-bars");
+            $(".btn1").click(function(){
+                $(".menubar").toggleClass("menubar1")
+
+                if( $(".menubar").hasClass("menubar1") == true){
+                    $icone.removeClass("fa-bars")
+                    $icone.addClass("fa-xmark")
+                }else{
+                    $icone.removeClass("fa-xmark")
+                    $icone.addClass("fa-bars")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

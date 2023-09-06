@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px ;
+            width: 100px;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+
+        }
+        .div1{
+            background-color: red;
+        }
+        .div2{
+            background-color: green;
+        }
+        
+   
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <img src="https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928_1280.jpg" alt="abc">
+    <hr>
+    <button class="btn1">click</button>
+    <button class="btn2">click here</button>
+    <button class="btn3">toggle</button>
+    <button class="btn4">refresh</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+    <script>
+      $(document).ready(function(){
+        $("img").click(function(){
+            $("img").fadeTo(2000,0.5)
+        })
+      })
+
+      $(document).ready(function(){
+        $("img").mouseout(function(){
+            $("img").fadeIn(1000,1)
+        })
+      })
+
+       $(document).ready(function(){
+        $(".btn1").click(function(){
+            $(".div1").slideUp(1000)
+        })
+       })
+       $(document).ready(function(){
+        $(".btn2").click(function(){
+            $(".div1").slideDown(1000)
+        })
+       })
+
+       $(document).ready(function(){
+        $(".btn3").click(function(){
+            $(".div2").slideToggle(1000)
+        })
+
+        $(".btn4").click(function(){
+            location.reload(true)
+        })
+       })
+    </script>
+</body>
+</html>

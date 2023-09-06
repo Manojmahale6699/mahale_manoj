@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .div12{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 3px black;
+            background-color: aqua;
+        }
+
+        .div13 {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 3px black;
+            background-color: rgb(225, 0, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <hr />
+    <button id="btn1">add</button>
+    <button id="btn2">romove</button>
+    <button id="btn3">toggle</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").addClass("div12")
+            })
+            $("#btn2").click(function(){
+                $(".div1").removeClass("div12")
+            })
+            $("#btn3").click(function(){
+                $(".div2").toggleClass("div13")
+            })
+        })
+    </script>
+</body>
+
+</html>

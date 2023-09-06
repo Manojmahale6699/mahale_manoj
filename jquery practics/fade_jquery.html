@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            /* border: 1px solid black; */
+        }
+        .div1{
+            background-color: red;
+        }
+        .div2{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">fade in </button>
+    <button id="btn2">fade out </button>
+    <button id="btn3">fade toggle </button>
+
+    <button id="btn4">refresh </button>
+    <hr>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, praesentium. Error eius libero facilis tenetur nam fugit cum id ab, soluta nobis quis ipsam mollitia fuga? Excepturi eligendi quia quod.</p>
+
+
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+    //    $(document).rady(function(){
+    //         $("selctre").event(function(){
+    //             $("srcter").jqureyfunction()
+                        //         })
+    //     })
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").fadeIn(1000)
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $(".div1").fadeOut(1000)
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $(".div2").fadeTo(1000,0.1)
+            })
+        })
+
+        $(document).ready(function(){
+            $("#btn4").click(function(){
+                location.reload()
+            })
+        })
+    </script>
+</body>
+</html>
