@@ -1,0 +1,107 @@
+1) What is jQuery?
+=> jQuery is a lightweight, "write less, do more", JavaScript library.
+
+The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+
+2)  How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?
+=> jQuery has several methods for CSS manipulation. We will look at the following methods:
+
+addClass() - Adds one or more classes to the selected elements
+removeClass() - Removes one or more classes from the selected elements
+toggleClass() - Toggles between adding/removing classes from the selected elements
+css() - Sets or returns the style attribute
+
+=> jQuery Animations - The animate() Method
+The jQuery animate() method is used to create custom animations.
+
+Syntax:
+
+$(selector).animate({params},speed,callback);
+The required params parameter defines the CSS properties to be animated.
+
+The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after the animation completes.
+
+The following example demonstrates a simple use of the animate() method; it moves a <div> element to the right, until it has reached a left property of 250px:
+
+
+3 ) How to create slider with animation?
+=> 
+   Here's a step-by-step guide on how to create a simple slider with jQuery:-
+
+=>. Include jQuery:
+   First, make sure you include the jQuery library in your HTML file. You can either download it and host it locally or include it from a content delivery network (CDN):
+
+   ```html
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   ```
+
+=> HTML Structure:
+   Create the HTML structure for your slider. Similar to the previous example, you'll need a container for the slider and individual slides:
+
+   ```html
+   <div class="slider">
+     <div class="slide">Slide 1</div>
+     <div class="slide">Slide 2</div>
+     <div class="slide">Slide 3</div>
+   </div>
+   ```
+
+=> CSS Styling:
+   Style your slider and individual slides using CSS, just like in the previous example.
+
+
+
+
+
+
+=> jQuery Animation:
+
+   Use jQuery to handle the animation of the slider. In this example, we'll animate the sliding effect:
+
+   ```javascript
+   $(document).ready(function () {
+     const $slider = $('.slider');
+     const $slides = $('.slide');
+     let currentIndex = 0;
+
+     function goToSlide(index) {
+       $slider.animate({ left: -index * 100 + '%' }, 500);
+     }
+
+     function nextSlide() {
+       currentIndex = (currentIndex + 1) % $slides.length;
+       goToSlide(currentIndex);
+     }
+
+     function prevSlide() {
+       currentIndex = (currentIndex - 1 + $slides.length) % $slides.length;
+       goToSlide(currentIndex);
+     }
+
+     // Add event listeners to buttons or other navigation elements
+     $('#prevButton').click(prevSlide);
+     $('#nextButton').click(nextSlide);
+
+     // Start the slider at the first slide
+     goToSlide(currentIndex);
+   });
+   ```
+
+=> HTML Buttons for Navigation:
+   Create buttons or other navigation elements in your HTML to allow users to control the slider, similar to the previous example.
+
+   ```html
+   <button id="prevButton">Previous</button>
+   <button id="nextButton">Next</button>
+   ```
+
+=>Testing:
+   Test your slider in a web browser. Clicking the "Previous" and "Next" buttons should smoothly transition between slides using jQuery animations.
+
