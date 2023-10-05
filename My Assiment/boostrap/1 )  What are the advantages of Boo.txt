@@ -1,0 +1,176 @@
+1 )  What are the advantages of Bootstrap?
+
+=> Easy to prevent repetitions among multiple projects.
+Responsive design that can be used to adapt screen sizes and choose what shows and what doesn't on any given device.
+Maintaining consistency among projects when using multiple developer teams.
+Quick design of prototypes.
+
+
+2)  What is a Bootstrap Container, and how does it work?
+=> In Bootstrap, container is used to set the content's margins dealing with the responsive behaviors of your layout. It contains the row elements and the row elements are the container of columns (known as grid system). The container class is used to create boxed content.
+
+
+3)  What are the default Bootstrap text settings?
+=> Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5. The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif. In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem
+
+
+4 )  What do you know about the Bootstrap Grid System?
+=> Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together. New to or unfamiliar with flexbox?
+
+
+5 ) What is the difference between Bootstrap 4 and Bootstrap 5
+
+=> Bootstrap v4.x
+Bootstrap 4 was launched back in January 2018, and it was a great improvement over the existing previous versions. However, the most loved features included the following.
+
+Flexbox Grid
+Flexbox grids gave the power to web developers to align the columns with ease. Now, you could position the columns at any part of the view simply by using classes like justify-content-center or align-items-end, and so on. You can also change the direction of rows which makes the vertical layouts much easier to implement and maintains responsiveness at the same time.
+
+Grid Tiers
+Bootstrap 3 had only four tiers, but Bootstrap 4 has provided improvements by providing new device-width to enhance the support from phablets to smaller devices. The new grid tiers specified the following device widths.
+
+sm: 576px and up
+md: 768px and up
+lg: 992px and up
+xl: 1200px and up
+Syntactically Awesome Style Sheets (Sass)
+Bootstrap 4 added the support for Sass, which is a widely-used and very popular CSS preprocessor. A Sass style sheet offers better control and customization and enables defining how you exactly want to use Bootstrap.
+
+Cards
+You no longer need to design multiple elements and combine them to provide a card view to the users. With the introduction of Cards component, you can directly use this component and further customize it using newly available bootstrap classes to redefine the look and feel of card structures, like profile cards or information tiles. Card component also doesn't have a fixed width and dissolves into the container it is placed into.
+
+Spacing Utilities
+Spacing utilities make your life easier by providing ready-made utility margin and padding classes that you can simply apply to each visual component. The margin classes are like mt-2 or mx-2, and the padding classes are like pt-2 or px-2, where m stands for margin, p stands for padding, the t for top or x for both left and right side, and the number says the amount you need.
+
+Bootstrap v5.x
+Bootstrap 5 came into play back in May 2021. This release was launched after several iterations of alpha and beta releases and hence had a stack of major additions and new features. Some of the most talked about features are listed below.
+
+Enhanced Grid System
+Enhanced Form elements
+Utilities API
+Support for IE
+Extended Colors
+Bootstrap Icons
+Let's dive into its features by comparing how things changed in Bootstrap 5 and understanding what better design perspectives it offers for developers.
+
+Bootstrap 5 vs. Bootstrap 4
+The above section talked about the features of both Bootstrap 4 and Bootstrap 5. This section talks about the upgrades that Bootstrap 5 provides over Bootstrap 4.
+
+Enhanced Grid System
+The grid system is retained in Bootstrap 5. However, an extra grid tier xxl has been introduced to minimize the effort in making the pages responsive on higher resolution displays.
+
+Columns don't have a default relative position in Bootstrap 5.
+
+Classes have been added to address vertical spacing.
+
+Enhanced Form Elements
+The form elements in Bootstrap 4 have defaulted to the browser-provided view. However, in Bootstrap 5, the form elements have a custom design that enables them to have a consistent look and feel in all browsers.
+
+The new form controls are based on completely semantic, standard form controls. This helps developers to avoid adding extra markups for form controls.
+
+Utilities API
+Unlike Bootstrap 4, Bootstrap 5 enables the developers to modify and create their own utilities.
+
+You can simply use sass to create your own utilities.
+
+You can use the state option to generate dummy class variations like hover and focus.
+
+
+6 ) What is a Button Group, and what is the class for a basic Button Group?
+=> Button Groups” in Bootstrap is a class of name “btn-group” which is used to create a series of buttons in groups (without spaces) vertically or horizontally. Syntax: This is the basic syntax of the button group class where each button has its own class of “btn”
+
+
+7 ) How can you use Bootstrap to make thumbnails?
+=> Add an <a> tag with the class of . thumbnail around an image.
+   This adds four pixels of padding and a gray border. 
+   On hover, an animated glow outlines the image.
+                          <div class = "row">
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+</div>
+
+
+
+
+8 )  In Bootstrap 4, what is flexbox?
+=>  Flexbox. The biggest difference between Bootstrap 3 and Bootstrap 4 is that Bootstrap 4 now uses flexbox, instead of floats, to handle the layout. The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+
+
+9 )  How can one create an alert in Bootstrap?
+=> Bootstrap provides an easy way to create predefined alert messages:
+
+-Success! This alert box indicates a successful or positive action.
+-Info! This alert box indicates a neutral informative change or action.
+-Warning! This alert box indicates a warning that might need attention.
+-Danger! This alert box indicates a dangerous or potentially negative action.
+
+Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger:
+
+
+Example
+<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+
+<div class="alert alert-danger">
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+
+
+
+10 ) What is a bootstrap card and how would you create one?
+=> In its simplest form, a Bootstrap card is a . card class with the . card-body class nested inside. This creates a card with a rounded border inside which you can place text, images, links, and other Bootstrap elements.
+        <div class="card m-2" style="width: 300px;">
+  <img src="https://assets.codepen.io/6093409/mountains-1.jpg" alt="a snow-capped mountain range"/>
+  <div class="card-body">
+    <h2 class="card-title">Mountains</h2>
+    <p class="card-text">This is a photo of snowy-covered mountains. How majestic.</p>
+    <a href="#" class="btn btn-secondary">Learn more</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
