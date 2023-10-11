@@ -1,0 +1,259 @@
+@media(max-width: 576px) {
+    .nav {
+        display: none !important;
+    }
+
+    .sub_nav1 {
+        display: none;
+    }
+
+    .text01 {
+        margin-bottom: 15vh;
+    }
+
+    .logo_img02 {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .main_img {
+        display: grid !important;
+        grid-template-columns: repeat(1, 3fr) !important;
+        place-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .img_01 {
+        height: 480px;
+        width: 400px;
+    }
+
+    .shop_01 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* ==== */
+    .offer {
+        margin: 0;
+    }
+
+    /* == */
+    .sub_card {
+        grid-template-columns: repeat(1, 4fr) !important;
+        margin-left: 12vh;
+    }
+
+    .footer01 {
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        margin-left: 8vh;
+        text-align: center;
+        gap: 20px;
+    }
+
+
+}
+
+
+/* ===================== */
+@media screen and (min-width: 576px) {
+    .nav {
+        display: none !important;
+    }
+
+    .sub_nav1 {
+        display: none;
+    }
+
+    .text01 {
+        margin-bottom: 15vh;
+    }
+
+    .logo_img02 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(34%, auto));
+        gap: 10px;
+
+    }
+
+    /* ========== */
+
+    .main_img {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr) !important;
+        place-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .img_01 {
+        height: 480px;
+        width: 400px;
+    }
+
+    .shop_01 {
+        margin: 0 0 0 10%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+        grid-template-columns: repeat(2, 5fr) !important;
+    }
+
+    .offer {
+        margin: 0;
+    }
+
+    /* == */
+    .sub_card {
+        grid-template-columns: repeat(1, 4fr) !important;
+        margin-left: 12vh;
+    }
+
+    .footer01 {
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        margin-left: 8vh;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* ======================== */
+
+@media(min-width: 768px) {
+    .nav {
+        display: none !important;
+
+    }
+
+    .sub_nav1 {
+        display: none;
+    }
+
+    .text01 {
+        margin-bottom: 15vh;
+    }
+
+    /* ============== */
+    .logo_img02 {
+        margin: 0 0 0 40px;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        justify-content: center;
+        align-self: center;
+        gap: 40px;
+    }
+
+
+
+    /* ======= */
+
+    .main_img {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .img_01 {
+        height: 480px;
+        width: 350px;
+    }
+
+    .shop_01 {
+        margin: 0 0 0 10%;
+        display: grid !important;
+        place-content: center;
+        gap: 10px;
+        grid-template-columns: repeat(3, 5fr) !important;
+    }
+
+    /* == */
+
+    .sub_card {
+        grid-template-columns: repeat(2, 2fr) !important;
+    }
+
+    .footer01 {
+        margin-left: 28vh;
+        margin-top: 10vh;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+/* ============================ */
+
+@media screen and (min-width:992px) {
+    .nav {
+        display: flex !important;
+
+    }
+
+    .sub_nav1 {
+        display: flex;
+    }
+
+    .text01 {
+        margin-bottom: 30vh !important;
+
+    }
+
+
+
+    /* =========== */
+    .main_img {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr) !important;
+        gap: 10px;
+    }
+
+    .img_01 {
+        height: 480px;
+        width: 350px;
+    }
+
+    .shop_01 {
+        margin: 0 0 0 10%;
+        display: grid;
+        place-content: center;
+        gap: 10px;
+        grid-template-columns: repeat(4, 3fr);
+    }
+
+    .sub_card {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+
+}
+
+/* =================================================================== */
+@media screen and (min-width:1200px) {
+    .main_img {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shop_01 {
+        display: grid;
+        place-content: center;
+        gap: 10px;
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+
+    .offer {
+        margin: 0 20vh;
+    }
+
+    .sub_card {
+        grid-template-columns: repeat(4, 1fr) !important;
+        margin-left: 28vh;
+    }
+}
